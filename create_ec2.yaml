@@ -16,8 +16,11 @@
         tags:
           Name: Module5 Bob
           Module: 5
+          Department: Accounting
         wait: yes
         vpc_subnet_id: "{{ public_subnet.subnet.id }}"
+        network:
+          assign_public_ip: yes
         exact_count: 1
         filters:
           tag:Name: Module5 Bob
@@ -30,8 +33,11 @@
         tags:
           Name: Module5 Mary
           Module: 5
+          Department: Accounting
         wait: yes
         vpc_subnet_id: "{{ public_subnet.subnet.id }}"
+        network:
+          assign_public_ip: yes
         exact_count: 1
         filters:
           tag:Name: Module5 Mary
@@ -44,8 +50,11 @@
         tags:
           Name: Module5 Sally
           Module: 5
+          Department: DevOps
         wait: yes
         vpc_subnet_id: "{{ public_subnet.subnet.id }}"
+        network:
+          assign_public_ip: yes
         exact_count: 1
         filters:
           tag:Name: Module5 Sally
